@@ -1,0 +1,9 @@
+{
+  "commitish" : "4.0.1",
+  "iOS" : [
+    {
+      "name" : "FontBlaster",
+      "hash" : "dd2903dc267f746f3b637ff1e956fec44e5c29ac64bfde9d4fd1dab3415b31e2"
+    }
+  ]
+}

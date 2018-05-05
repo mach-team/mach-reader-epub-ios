@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.3.0",
+  "iOS" : [
+    {
+      "name" : "FolioReaderKit",
+      "hash" : "c6cd164f267915c09fd2d2ceb2619c4f57a11537571922acaf2b9e840ef7d742"
+    }
+  ]
+}

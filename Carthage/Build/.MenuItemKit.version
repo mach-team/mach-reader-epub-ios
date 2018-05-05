@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.0.0",
+  "iOS" : [
+    {
+      "name" : "MenuItemKit",
+      "hash" : "f2ec58e188584a1c5f5754fa187986e7bf010f248c1784bc622a0b3ef725bb2a"
+    }
+  ]
+}

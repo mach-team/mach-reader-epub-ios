@@ -1,0 +1,13 @@
+{
+  "commitish" : "6.0.0",
+  "iOS" : [
+    {
+      "name" : "JSQWebViewController",
+      "hash" : "4492ce1eb03b770cdf664a10e77085f71e48a62b636db980c5820824a5a21816"
+    },
+    {
+      "name" : "JSQWebViewController",
+      "hash" : "4492ce1eb03b770cdf664a10e77085f71e48a62b636db980c5820824a5a21816"
+    }
+  ]
+}

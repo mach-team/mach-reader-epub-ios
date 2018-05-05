@@ -1,0 +1,11 @@
+framework module JSQWebViewController {
+  umbrella header "JSQWebViewController.h"
+
+  export *
+  module * { export * }
+}
+
+module JSQWebViewController.Swift {
+    header "JSQWebViewController-Swift.h"
+    requires objc
+}

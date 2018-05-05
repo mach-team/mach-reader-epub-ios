@@ -12,6 +12,16 @@
 		25FEB57F209DD860009B597D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FEB57D209DD860009B597D /* Main.storyboard */; };
 		25FEB581209DD860009B597D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FEB580209DD860009B597D /* Assets.xcassets */; };
 		25FEB584209DD860009B597D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FEB582209DD860009B597D /* LaunchScreen.storyboard */; };
+		25FEB58E209DDCE8009B597D /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB58D209DDCE8009B597D /* FolioReaderKit.framework */; };
+		25FEB597209DDDFE009B597D /* ZFDragableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB58F209DDDFE009B597D /* ZFDragableModalTransition.framework */; };
+		25FEB598209DDDFE009B597D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB590209DDDFE009B597D /* RealmSwift.framework */; };
+		25FEB599209DDDFE009B597D /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB591209DDDFE009B597D /* AEXML.framework */; };
+		25FEB59A209DDDFE009B597D /* FontBlaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB592209DDDFE009B597D /* FontBlaster.framework */; };
+		25FEB59B209DDDFE009B597D /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB593209DDDFE009B597D /* MenuItemKit.framework */; };
+		25FEB59C209DDDFE009B597D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB594209DDDFE009B597D /* Realm.framework */; };
+		25FEB59D209DDDFE009B597D /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB595209DDDFE009B597D /* JSQWebViewController.framework */; };
+		25FEB59E209DDDFE009B597D /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FEB596209DDDFE009B597D /* ZipArchive.framework */; };
+		25FEB5A0209DEC32009B597D /* book.epub in Resources */ = {isa = PBXBuildFile; fileRef = 25FEB59F209DEC31009B597D /* book.epub */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		25FEB580209DD860009B597D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25FEB583209DD860009B597D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25FEB585209DD860009B597D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25FEB58D209DDCE8009B597D /* FolioReaderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FolioReaderKit.framework; path = Carthage/Build/iOS/FolioReaderKit.framework; sourceTree = "<group>"; };
+		25FEB58F209DDDFE009B597D /* ZFDragableModalTransition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZFDragableModalTransition.framework; path = Carthage/Build/iOS/ZFDragableModalTransition.framework; sourceTree = "<group>"; };
+		25FEB590209DDDFE009B597D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		25FEB591209DDDFE009B597D /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
+		25FEB592209DDDFE009B597D /* FontBlaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontBlaster.framework; path = Carthage/Build/iOS/FontBlaster.framework; sourceTree = "<group>"; };
+		25FEB593209DDDFE009B597D /* MenuItemKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MenuItemKit.framework; path = Carthage/Build/iOS/MenuItemKit.framework; sourceTree = "<group>"; };
+		25FEB594209DDDFE009B597D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		25FEB595209DDDFE009B597D /* JSQWebViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQWebViewController.framework; path = Carthage/Build/iOS/JSQWebViewController.framework; sourceTree = "<group>"; };
+		25FEB596209DDDFE009B597D /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
+		25FEB59F209DEC31009B597D /* book.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book.epub; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FEB59C209DDDFE009B597D /* Realm.framework in Frameworks */,
+				25FEB597209DDDFE009B597D /* ZFDragableModalTransition.framework in Frameworks */,
+				25FEB598209DDDFE009B597D /* RealmSwift.framework in Frameworks */,
+				25FEB599209DDDFE009B597D /* AEXML.framework in Frameworks */,
+				25FEB59A209DDDFE009B597D /* FontBlaster.framework in Frameworks */,
+				25FEB59B209DDDFE009B597D /* MenuItemKit.framework in Frameworks */,
+				25FEB59D209DDDFE009B597D /* JSQWebViewController.framework in Frameworks */,
+				25FEB59E209DDDFE009B597D /* ZipArchive.framework in Frameworks */,
+				25FEB58E209DDCE8009B597D /* FolioReaderKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +69,7 @@
 			children = (
 				25FEB578209DD860009B597D /* MachReader */,
 				25FEB577209DD860009B597D /* Products */,
+				25FEB58C209DDCE8009B597D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +84,7 @@
 		25FEB578209DD860009B597D /* MachReader */ = {
 			isa = PBXGroup;
 			children = (
+				25FEB59F209DEC31009B597D /* book.epub */,
 				25FEB579209DD860009B597D /* AppDelegate.swift */,
 				25FEB57B209DD860009B597D /* ViewController.swift */,
 				25FEB57D209DD860009B597D /* Main.storyboard */,
@@ -62,6 +93,22 @@
 				25FEB585209DD860009B597D /* Info.plist */,
 			);
 			path = MachReader;
+			sourceTree = "<group>";
+		};
+		25FEB58C209DDCE8009B597D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25FEB591209DDDFE009B597D /* AEXML.framework */,
+				25FEB592209DDDFE009B597D /* FontBlaster.framework */,
+				25FEB595209DDDFE009B597D /* JSQWebViewController.framework */,
+				25FEB593209DDDFE009B597D /* MenuItemKit.framework */,
+				25FEB594209DDDFE009B597D /* Realm.framework */,
+				25FEB590209DDDFE009B597D /* RealmSwift.framework */,
+				25FEB58F209DDDFE009B597D /* ZFDragableModalTransition.framework */,
+				25FEB596209DDDFE009B597D /* ZipArchive.framework */,
+				25FEB58D209DDCE8009B597D /* FolioReaderKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +121,7 @@
 				25FEB572209DD860009B597D /* Sources */,
 				25FEB573209DD860009B597D /* Frameworks */,
 				25FEB574209DD860009B597D /* Resources */,
+				25FEB58B209DDA5E009B597D /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -125,11 +173,38 @@
 			files = (
 				25FEB584209DD860009B597D /* LaunchScreen.storyboard in Resources */,
 				25FEB581209DD860009B597D /* Assets.xcassets in Resources */,
+				25FEB5A0209DEC32009B597D /* book.epub in Resources */,
 				25FEB57F209DD860009B597D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25FEB58B209DDA5E009B597D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FolioReaderKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MenuItemKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ZFDragableModalTransition.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AEXML.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FontBlaster.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JSQWebViewController.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ZipArchive.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25FEB572209DD860009B597D /* Sources */ = {
@@ -275,8 +350,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NAJPYUJBUB;
+				DEVELOPMENT_TEAM = LCT63PM6Y5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MachReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.mach.MachReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +370,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NAJPYUJBUB;
+				DEVELOPMENT_TEAM = LCT63PM6Y5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MachReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.mach.MachReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";

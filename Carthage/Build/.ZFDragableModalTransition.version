@@ -1,0 +1,9 @@
+{
+  "commitish" : "8da951efb4202385630d1cf7104b60d1208f807e",
+  "iOS" : [
+    {
+      "name" : "ZFDragableModalTransition",
+      "hash" : "b5c676a12bb87df2e1662d26a309faca366953ade0905fdef2a801807494802e"
+    }
+  ]
+}
