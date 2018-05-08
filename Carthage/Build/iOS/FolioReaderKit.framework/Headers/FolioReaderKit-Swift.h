@@ -419,6 +419,7 @@ SWIFT_CLASS("_TtC14FolioReaderKit9Highlight")
 @property (nonatomic) NSInteger type;
 @property (nonatomic) NSInteger startOffset;
 @property (nonatomic) NSInteger endOffset;
+@property (nonatomic, copy) NSString * _Nullable noteForHighlight;
 + (NSString * _Nonnull)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
