@@ -19,6 +19,7 @@ class BookListViewController: UIViewController {
         config.scrollDirection = .vertical
         
         config.quoteCustomBackgrounds = []
+        config.tintColor = UIColor(red: 0.00, green: 0.66, blue: 0.46, alpha: 1.0)
         let textColor = UIColor(red:0.86, green:0.73, blue:0.70, alpha:1.0)
         let customColor = UIColor(red:0.30, green:0.26, blue:0.20, alpha:1.0)
         let customQuote = QuoteImage(withColor: customColor, alpha: 1.0, textColor: textColor)
