@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W6</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Book List View Controller-->
         <scene sceneID="EL6-7b-13v">
@@ -21,24 +27,92 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookListBg" translatesAutoresizingMaskIntoConstraints="NO" id="5m6-mF-zaN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtT-qc-kyA">
-                                <rect key="frame" x="145" y="318" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="iCloud Drive"/>
-                                <connections>
-                                    <action selector="handleICloudButton:" destination="cO1-ud-Gen" eventType="touchUpInside" id="qoh-lh-ccY"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-MT-64B">
+                                <rect key="frame" x="199" y="286" width="143.5" height="143.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_read" translatesAutoresizingMaskIntoConstraints="NO" id="U8e-Pl-q8A">
+                                        <rect key="frame" x="40" y="32" width="63.5" height="63.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="U8e-Pl-q8A" secondAttribute="height" multiplier="1:1" id="WNT-Cg-MtE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="読む" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pR-xi-pwf">
+                                        <rect key="frame" x="8" y="103.5" width="127.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.6588235294117647" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.91909246575342463" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="U8e-Pl-q8A" firstAttribute="top" secondItem="mC2-MT-64B" secondAttribute="top" constant="32" id="CYZ-T5-oPB"/>
+                                    <constraint firstItem="3pR-xi-pwf" firstAttribute="leading" secondItem="mC2-MT-64B" secondAttribute="leading" constant="8" id="GSl-bX-QH9"/>
+                                    <constraint firstAttribute="trailing" secondItem="U8e-Pl-q8A" secondAttribute="trailing" constant="40" id="JWy-3U-tx4"/>
+                                    <constraint firstAttribute="trailing" secondItem="3pR-xi-pwf" secondAttribute="trailing" constant="8" id="Mu0-eX-YO8"/>
+                                    <constraint firstItem="3pR-xi-pwf" firstAttribute="top" secondItem="U8e-Pl-q8A" secondAttribute="bottom" constant="8" id="luQ-d8-Vau"/>
+                                    <constraint firstItem="U8e-Pl-q8A" firstAttribute="leading" secondItem="mC2-MT-64B" secondAttribute="leading" constant="40" id="rfU-Va-790"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAM-Jn-Cue">
+                                <rect key="frame" x="32" y="286" width="143.5" height="143.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="探す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPj-FH-4yH">
+                                        <rect key="frame" x="10" y="103.5" width="123.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.6588235294117647" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cart" translatesAutoresizingMaskIntoConstraints="NO" id="haH-D9-evk">
+                                        <rect key="frame" x="40" y="32" width="63.5" height="63.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="haH-D9-evk" secondAttribute="height" multiplier="1:1" id="5fy-9y-MLI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.92235659246575341" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lAM-Jn-Cue" secondAttribute="height" multiplier="1:1" id="0Kb-Xn-MAv"/>
+                                    <constraint firstItem="sPj-FH-4yH" firstAttribute="leading" secondItem="lAM-Jn-Cue" secondAttribute="leading" constant="10" id="48l-Yd-Mfr"/>
+                                    <constraint firstItem="sPj-FH-4yH" firstAttribute="top" secondItem="haH-D9-evk" secondAttribute="bottom" constant="8" id="5As-uy-Cx8"/>
+                                    <constraint firstAttribute="trailing" secondItem="haH-D9-evk" secondAttribute="trailing" constant="40" id="B3Z-Nl-ltS"/>
+                                    <constraint firstItem="haH-D9-evk" firstAttribute="leading" secondItem="lAM-Jn-Cue" secondAttribute="leading" constant="40" id="EdD-Af-lk9"/>
+                                    <constraint firstItem="haH-D9-evk" firstAttribute="top" secondItem="lAM-Jn-Cue" secondAttribute="top" constant="32" id="YmZ-ab-RZ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="sPj-FH-4yH" secondAttribute="trailing" constant="10" id="g0s-BX-xja"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CSx-96-jpl" firstAttribute="trailing" secondItem="mC2-MT-64B" secondAttribute="trailing" constant="32" id="50X-Ik-fQ8"/>
+                            <constraint firstItem="lAM-Jn-Cue" firstAttribute="top" secondItem="mC2-MT-64B" secondAttribute="top" id="Ffi-oJ-IMB"/>
                             <constraint firstItem="5m6-mF-zaN" firstAttribute="top" secondItem="5hr-rg-tFJ" secondAttribute="top" id="IT2-tl-76y"/>
                             <constraint firstItem="5m6-mF-zaN" firstAttribute="bottom" secondItem="CSx-96-jpl" secondAttribute="bottom" id="TpI-Yy-aEn"/>
                             <constraint firstItem="5m6-mF-zaN" firstAttribute="leading" secondItem="CSx-96-jpl" secondAttribute="leading" id="XIn-Dk-J0Y"/>
+                            <constraint firstItem="lAM-Jn-Cue" firstAttribute="centerY" secondItem="5hr-rg-tFJ" secondAttribute="centerY" constant="24" id="XRh-FE-wrB"/>
+                            <constraint firstItem="lAM-Jn-Cue" firstAttribute="height" secondItem="mC2-MT-64B" secondAttribute="height" id="YlC-Ej-pla"/>
+                            <constraint firstItem="lAM-Jn-Cue" firstAttribute="width" secondItem="mC2-MT-64B" secondAttribute="width" id="gfd-Hh-9VJ"/>
+                            <constraint firstItem="mC2-MT-64B" firstAttribute="leading" secondItem="lAM-Jn-Cue" secondAttribute="trailing" constant="24" id="h1X-va-zfW"/>
+                            <constraint firstItem="lAM-Jn-Cue" firstAttribute="leading" secondItem="CSx-96-jpl" secondAttribute="leading" constant="32" id="mbT-0N-I92"/>
                             <constraint firstItem="CSx-96-jpl" firstAttribute="trailing" secondItem="5m6-mF-zaN" secondAttribute="trailing" id="tP7-yE-MBF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CSx-96-jpl"/>
                     </view>
+                    <connections>
+                        <outlet property="readView" destination="mC2-MT-64B" id="IsI-Ot-4NO"/>
+                        <outlet property="searchView" destination="lAM-Jn-Cue" id="iDx-kz-DvL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe6-Wz-Xgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,5 +121,7 @@
     </scenes>
     <resources>
         <image name="BookListBg" width="375" height="667"/>
+        <image name="ic_cart" width="60" height="60"/>
+        <image name="ic_read" width="60" height="60"/>
     </resources>
 </document>
